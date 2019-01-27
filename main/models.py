@@ -1,8 +1,5 @@
-from django.utils import timezone
-
 from django.db import models
 
-# Create your models here.
 
 
 class Team(models.Model):
@@ -13,7 +10,7 @@ class Team(models.Model):
 
 
 class Match(models.Model):
-    date = models.DateTimeField(default=timezone.now())
+    date = models.DateTimeField()
 
 
 class MatchDetail(models.Model):
