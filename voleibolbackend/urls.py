@@ -19,7 +19,7 @@ from rest_framework.routers import DefaultRouter
 from main import views
 
 router = DefaultRouter()
-router.register(r'start-game', views.StartGame, base_name='start-game')
+router.register(r'game', views.StartGame, base_name='start-game')
 
 
 urlpatterns = [
